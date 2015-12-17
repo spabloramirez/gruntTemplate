@@ -1,1 +1,2 @@
 # gruntTemplate
+npm install

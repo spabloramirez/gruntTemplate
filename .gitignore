@@ -1,0 +1,8 @@
+//Editores
+/nbproject/
+/.idea/
+.buildpath
+.project
+.settings/
+
+/node_modules/
