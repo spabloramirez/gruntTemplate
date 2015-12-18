@@ -22,10 +22,12 @@ module.exports = function(grunt) {
     grunt.util._.extend(config, loadConfig('./tasks/options/'));
     grunt.initConfig(config);
 
-    // Load the plugin that provides the "uglify" task.
+    //Load task
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-sass');
 
     // Default task(s).
     grunt.registerTask('default', ['uglify']);
+
 
 };
