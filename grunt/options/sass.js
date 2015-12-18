@@ -1,15 +1,11 @@
 module.exports = {
-  dist: {
-    options: {
-      // cssmin will minify later
-      style: 'expanded'
-    },
-    files: {
-        expand: true,
-        cwd: '<%= pkg.path.sass.src %>',
-        src: ['*.scss'],
-        dest: '../public',
-        ext: '.css'
+    dist: {
+        files: [{
+            expand: true,
+            cwd: '<%= pkg.path.sass.src %>',
+            src: ['*.scss', '!includes/*'],
+            dest: '<%= pkg.path.sass.dest %>',
+            ext: '.css'
+        }]
     }
-  }
 }

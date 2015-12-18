@@ -2,9 +2,9 @@ module.exports = {
     target: {
         files: [{
             expand: true,
-            cwd: 'css/dist',
+            cwd: '<%= pkg.path.cssmin.src %>',
             src: ['*.css', '!*.min.css'],
-            dest: 'css/dist',
+            dest: '<%= pkg.path.cssmin.dest %>',
             ext: '.min.css'
         }]
     }
