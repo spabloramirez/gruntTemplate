@@ -1,8 +1,14 @@
-//Editores
+//https://github.com/github/gitignore
+
+#Editores
 /nbproject/
-/.idea/
+## Covers JetBrains IDEs
+.idea/
 .buildpath
 .project
 .settings/
 
 /node_modules/
+
+.sass-cache/
+*.css.map
