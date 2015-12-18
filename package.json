@@ -1,5 +1,8 @@
 {
-  "name": "my-project-name",
+  "name": "bootstrap",
+  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+  "homepage": "http://getbootstrap.com",
+  "author": "Twitter, Inc.",
   "version": "0.1.0",
   "devDependencies": {
     "glob": "^6.0.1",
@@ -8,5 +11,15 @@
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-nodeunit": "~0.4.1",
     "grunt-contrib-uglify": "~0.5.0"
+  },
+  "path": {
+    "sass": {
+      "src": "sass/",
+      "dest": "dist/css"
+    },
+    "uglify": {
+      "src": "js",
+      "dest": "dist/js"
+    }
   }
 }

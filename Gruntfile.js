@@ -19,14 +19,15 @@ module.exports = function(grunt) {
     };
 
     var config = {pkg: grunt.file.readJSON('package.json')};
-    grunt.util._.extend(config, loadConfig('./tasks/options/'));
+    grunt.util._.extend(config, loadConfig('./grunt/options/'));
     grunt.initConfig(config);
 
     //Load task
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-sass');
+    //grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify']);
+    //grunt.registerTask('default', ['uglify']);
+
 };
