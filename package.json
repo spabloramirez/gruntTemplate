@@ -1,8 +1,8 @@
 {
-  "name": "bootstrap",
-  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-  "homepage": "http://getbootstrap.com",
-  "author": "Twitter, Inc.",
+  "name": "gruntTemplate",
+  "description": "Essential tools for every Frond-end developer.",
+  "homepage": "https://github.com/spabloramirez/gruntTemplate",
+  "author": "spabloramirez",
   "version": "0.1.0",
   "devDependencies": {
     "glob": "^6.0.1",
@@ -11,20 +11,25 @@
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-nodeunit": "~0.4.1",
     "grunt-contrib-sass": "^0.9.2",
-    "grunt-contrib-uglify": "~0.5.0"
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-processhtml": "^0.3.8"
   },
   "path": {
     "sass": {
       "src": "sass/",
-      "dest": "dist/css"
+      "dest": "css/"
     },
     "cssmin": {
-      "src": "dist/css",
+      "src": "css/",
       "dest": "dist/css"
     },
     "uglify": {
-      "src": "js",
+      "src": "js/",
       "dest": "dist/js"
+    },
+    "processhtml": {
+      "src": "html/",
+      "dest": "dist/"
     }
   }
 }

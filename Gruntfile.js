@@ -21,11 +21,13 @@ module.exports = function(grunt) {
     var config = {pkg: grunt.file.readJSON('package.json')};
     grunt.util._.extend(config, loadConfig('./grunt/options/'));
     grunt.initConfig(config);
+    //console.log(config.pkg.path);
 
     //Load task
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-processhtml');
 
     // Default task(s).
     //grunt.registerTask('default', ['uglify']);
